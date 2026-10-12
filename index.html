@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Shopping Cart</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header><h1>🛍️ Simple Shopping Cart</h1><p>Browse products, add them to your cart, and shop smart.</p></header>
+  <main>
+    <section>
+      <h2>Products</h2>
+      <p id="status">Loading products from API...</p>
+      <div id="products" class="products"></div>
+    </section>
+    <aside class="cart">
+      <h2>🛒 Your Cart (<span id="cartCount">0</span>)</h2>
+      <ul id="cartItems"></ul>
+      <div class="total">Total: ₹<span id="total">0.00</span></div>
+      <button id="clearCart" class="secondary">Clear Cart</button>
+    </aside>
+  </main>
+  <footer>Products loaded from DummyJSON public API · Demo project</footer>
+  <script src="script.js"></script>
+</body>
+</html>
